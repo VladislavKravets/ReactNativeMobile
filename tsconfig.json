@@ -1,3 +1,16 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "types": ["node", "react"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "extends": "expo/tsconfig.base"
 }
